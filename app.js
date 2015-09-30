@@ -6,7 +6,7 @@ var path = require('path');
 var fs = require('fs');
 
 program
-  .version('0.0.4')
+  .version('0.0.6')
   .option('--save <path>', 'Save output to a textfile')
   .option('decode [text]', 'Decode a morse to text')
   .option('encode [text]', 'Encode a text to morse')
@@ -29,6 +29,7 @@ if (program.decode) {
 else if(program.encode) {
   var text = program.encode;
   var morseMsg = morse.encode(text);
+  console.log(morseMsg);
   if (program.save) {
     console.log(path.normalize(program.save));
     fs.writeFile(path.normalize(program.save), morseMsg, function() {
