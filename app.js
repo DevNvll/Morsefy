@@ -1,12 +1,12 @@
 #!/usr/bin/env node
 
-var morse = require('./morsefy').create();
+var morse = require('./morsefy');
 var program = require('commander');
 var path = require('path');
 var fs = require('fs');
 
 program
-  .version('0.0.6')
+  .version('0.0.7')
   .option('--save <path>', 'Save output to a textfile')
   .option('decode [text]', 'Decode a morse to text')
   .option('encode [text]', 'Encode a text to morse')

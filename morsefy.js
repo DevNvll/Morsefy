@@ -1,8 +1,4 @@
-function Morsefy(){
-    return this;
-}
-
-var ITU = {
+var morse = {
     "a" :  ".-",
     "b" :  "-...",
     "c" :  "-.-.",
@@ -79,19 +75,21 @@ var chars = {
     "---..": "8",
     "----.": "9",
     "-----": "0",
-    "/"      : " "
+    "/"    : " "
 };
 
-Morsefy.prototype = {
-    version: "0.0.1",
+function Morsefy(){
+    return this;
+}
 
+Morsefy.prototype = {
     encode: function(str) {
         var encoding = "";
 
         for (var i=0; i<str.length; i++) {
             var char = str.charAt(i).toLowerCase();
-            if (ITU[char]) {
-                encoding += ITU[char];
+            if (morse[char]) {
+                encoding += morse[char];
                 encoding += " ";
             }
         }
@@ -111,40 +109,8 @@ Morsefy.prototype = {
             decoding += " ";
         }
         return decoding;
-    },
-
-    isValid: function(str, type) {
-        if (!str)
-            return null;
-
-        if (type != "chars" && type != "morse")
-            return null;
-
-        if (type == "chars") {
-            for (var i=0; i<str.length; i++) {
-                if (!ITU[str.charAt(i).toLowerCase()])
-                    return false;
-            }
-            return true;
-        }
-        else if (type == "morse") {
-            var words = str.split("/");
-            for (var i=0; i<words.length; i++) {
-                var character = words[i].split(" ");
-                for (var j=0; j<character.length; j++) {
-                    if (!chars[character[j]] && character[j] != '') // ignore spaces
-                        return false;
-                }
-            }
-            return true;
-        }
     }
 
 };
 
-exports.create = function(version) {
-    version = typeof version !== 'undefined' ? version : 'ITU';
-    if (version != "ITU")
-        return null;
-    return new Morsefy();
-};
+module.exports = new Morsefy();
