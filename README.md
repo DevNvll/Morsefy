@@ -1,5 +1,5 @@
 # Morsefy
-NodeJS module to encode and decode morse does directly from the command line.
+Simple NodeJS app to encode and decode morse codes directly from the command line.
 
 ### Installing
 ``npm install -g morsefy``
