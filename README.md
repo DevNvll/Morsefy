@@ -39,3 +39,7 @@ Simple NodeJS module to encode and decode morse codes directly from the command 
 ##### Example
 
 ``morsefy encode 'Hello World' --save output.txt``
+
+### Testing
+
+``npm test``

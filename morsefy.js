@@ -93,7 +93,8 @@ Morsefy.prototype = {
                 encoding += " ";
             }
         }
-        return encoding;
+
+        return encoding.trim();
     },
 
     decode: function(str) {
@@ -108,7 +109,7 @@ Morsefy.prototype = {
             }
             decoding += " ";
         }
-        return decoding;
+        return decoding.trim();
     }
 
 };
