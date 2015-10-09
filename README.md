@@ -9,8 +9,6 @@ Simple NodeJS module to encode and decode morse codes directly from the command 
 
 ### Usage
 
-#### Module
-
 ##### Setup
 
 ``var morsefy = require('morsefy');``
