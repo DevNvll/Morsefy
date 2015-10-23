@@ -1,18 +1,28 @@
 # Morsefy
-Simple NodeJS module to encode and decode morse codes directly from the command line.
+Pure JS/NodeJS plugin to encode and decode Morse.
 
 ### Installing
 ``npm install morsefy``
+
+``bower install morsefy``
 
 ``npm install -g morsefy`` to install as a command line application
 
 
 ### Usage
 
-#### Module
+``<script src="bower_components/morsefy.js"></script>``
+
+``<script>document.write(Morsefy.decode('-- --- .-. ... . ..-. -.--'));</script>``
+
+``// Morsefy``
+
+``<script>document.write(Morsefy.encode('Morsefy'));</script>``
+
+``// -- --- .-. ... . ..-. -.--``
+#### Node Module
 
 ##### Setup
-
 ``var morsefy = require('morsefy');``
 
 ##### Encoding
@@ -25,7 +35,7 @@ Simple NodeJS module to encode and decode morse codes directly from the command 
 
 #### Command line
   ``morsefy [options]``
-  
+
 ``-h, --help     output usage information``
 
 ``-V, --version  output the version number``
