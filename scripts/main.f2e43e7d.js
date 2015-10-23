@@ -1,0 +1,1 @@
+var morseDesc=Morsefy.encode("Encode and decode Morse using Javascript");$("#morsedesc").html(morseDesc),$("#text").keyup(function(){$("#morse").val(Morsefy.encode($("#text").val()))}),$("#morse").keyup(function(){$("#text").val(Morsefy.decode($("#morse").val()))});
