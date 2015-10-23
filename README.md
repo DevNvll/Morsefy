@@ -1,5 +1,5 @@
 # Morsefy
-Pure JS/NodeJS plugin to encode and decode Morse.
+JS/NodeJS plugin to encode and decode Morse.
 
 ### Installing
 ``npm install morsefy``
