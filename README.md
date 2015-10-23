@@ -49,7 +49,7 @@ or download ``morsefy.js`` from ``lib`` folder.
 
 ##### Example
 
-``morsefy encode 'Hello World' --save output.txt``
+``morsefy encode 'Hello World'``
 
 ### Testing
 
