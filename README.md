@@ -11,6 +11,7 @@ Pure JS/NodeJS plugin to encode and decode Morse.
 
 ### Usage
 
+<<<<<<< HEAD
 ``<script src="bower_components/morsefy.js"></script>``
 
 ``<script>document.write(Morsefy.decode('-- --- .-. ... . ..-. -.--'));</script>``
@@ -18,6 +19,9 @@ Pure JS/NodeJS plugin to encode and decode Morse.
 ``// Morsefy``
 
 ``<script>document.write(Morsefy.encode('Morsefy'));</script>``
+=======
+##### Setup
+>>>>>>> origin/master
 
 ``// -- --- .-. ... . ..-. -.--``
 #### Node Module
