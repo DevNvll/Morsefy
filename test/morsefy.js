@@ -1,5 +1,5 @@
 var assert = require("assert");
-var morsefy = require('../morsefy');
+var morsefy = require('../lib/node/morsefy');
 
 describe('Morsefy', function() {
 
