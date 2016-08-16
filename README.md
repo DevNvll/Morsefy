@@ -8,7 +8,7 @@ JS/NodeJS plugin to encode and decode Morse.
 
 ``npm install -g morsefy`` to install as a command line application
 
-or download ``morsefy.js`` from ``lib`` folder.
+or from npmcdn ``https://npmcdn.com/morsefy@1.0.0/lib/morsefy.js``
 
 ### Usage
 
